@@ -1,0 +1,9 @@
+<br/>
+<h3 style="text-align:center;">Find your next space adventure & meet new people from below!</h3>
+<br/>
+
+<ul class="list">
+  <% @meetups.each do |meetup| %>
+    <li><a href="/meetups/<%= meetup.id %>"><%= "#{meetup.name}" %></a></li>
+  <% end %>
+</ul>
